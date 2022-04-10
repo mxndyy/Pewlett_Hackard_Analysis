@@ -33,7 +33,7 @@ Software:
 - The table displays a list of employees who are going to retire in the next few years.
 - In the table each employee is listed only once, by her or his most recent title.
 
-![unique_titles](Queries/retirement_titles.png)
+![unique_titles](Queries/unique_titles.png)
 
 ### 3. The number of employees by their most recent job title who are about to retire.
 - The table includes employees' titles and their sum. 
