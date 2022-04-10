@@ -19,11 +19,11 @@ Software:
 ## Results
 ### 1. The list of retiring employees
 
-The table includes employee number, first name, last name, title, from-date and to-date.
-The query returns 133,776 rows.
-The table displays a list of employees who are going to retire in the next few years.
-The list is very extensive, bu the snapshot below gives us some insights about the query. Some employees appear more than once due to change of title during their career at Pewlett-Hackard.
-![retirement_titles](Queries/retirement_titles.png)
+    The table includes employee number, first name, last name, title, from-date and to-date.
+    The query returns 133,776 rows.
+    The table displays a list of employees who are going to retire in the next few years.
+    The list is very extensive, bu the snapshot below gives us some insights about the query. Some employees appear more than once due to change of title      during their career at Pewlett-Hackard.
+    ![retirement_titles](Queries/retirement_titles.png)
 
 Overview of the code
 
