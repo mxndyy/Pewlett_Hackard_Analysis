@@ -17,7 +17,7 @@ Software:
 -	Quick DBD
 
 ## Results
-. The list of retiring employees
+### 1. The list of retiring employees
 
 The table includes employee number, first name, last name, title, from-date and to-date.
 The query returns 133,776 rows.
@@ -31,7 +31,7 @@ To retrieve the data, two tables were merged together - employees and titles - w
 
 Drawback: this query contains all the titles that employees acquired while working at Pewlett-Hackard over the years. This resulted in duplicates, some employees appear two times or more; therefore, the number of retiring employees is incorrect.
 
-2. The list of retiring employees without duplicates
+### 2. The list of retiring employees without duplicates
 
 The table includes employee number, first name, last name, title, from-date and to-date.
 The query returns 90,398 rows.
