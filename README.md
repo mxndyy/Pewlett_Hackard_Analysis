@@ -24,7 +24,7 @@ Software:
 - The table displays a list of employees who are going to retire in the next few years.
 - The list is very extensive, bu the snapshot below gives us some insights about the query. Some employees appear more than once due to change of title      during their career at Pewlett-Hackard.
 
-*![retirement_info](Queries/retirement_info.png)
+![retirement_info](Queries/retirement_info.png)
 
 ### 2. The list of retiring employees without duplicates
 
@@ -40,12 +40,12 @@ Software:
 - The query returns 7 rows.
 - This table allows us to see how many employees will retire within the next few years within their most recent job title. 
 
-*![retiring_titles](Queries/retiring_titles.png)
+![retiring_titles](Queries/retiring_titles.png)
 
 ### 4. Employees eligible for the mentorship program
 - This table contains information such as employee number, first and last name, birth date, from and to date and title. 
 - The output data provides a list of employees who is eligible for the mentorship program. 
 
-*![membership_eligibility](Queries/membership_eligibility.png)
+![membership_eligibility](Queries/membership_eligibility.png)
 
 ## Summary
