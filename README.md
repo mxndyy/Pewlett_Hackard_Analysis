@@ -46,7 +46,7 @@ Software:
 - This table contains information such as employee number, first and last name, birth date, from and to date and title. 
 - The output data provides a list of employees who is eligible for the mentorship program. 
 
-![membership_eligibility](Queries/membership_eligibility.png)
+![mentorship_eligibility](Queries/mentorship_eligibility.png)
 
 ## Summary
 
