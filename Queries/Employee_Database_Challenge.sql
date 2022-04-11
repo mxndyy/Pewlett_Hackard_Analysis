@@ -49,3 +49,34 @@ FROM employees as e
 WHERE (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND (de.to_date = '9999-01-01')
 ORDER BY e.emp_no ASC, de.from_date DESC;
+
+--Del. 3
+--Roles per staff & Dept.
+SELECT DISTINCT ON (rt.emp_no) 
+	rt.emp_no,
+	rt.first_name,
+	rt.last_name,
+	rt.titles,
+	d.dept_name
+INTO unique_titles_department
+FROM retirement_titles as rt
+INNER JOIN dept_emp as de
+ON (rt.emp_no = de.emp_no)
+INNER JOIN departments as d
+ON (d.dept_no = de.dept_no)
+ORDER BY rt.emp_no, rt.to_date DESC;
+
+-- How many roles will need to be fill per title and department?
+SELECT ut.dept_name, ut.titles, COUNT(ut.titles) 
+INTO rolls_to_fill
+FROM (SELECT titles, dept_name from unique_titles_department) as ut
+GROUP BY ut.dept_name, ut.Titles
+ORDER BY ut.dept_name DESC;
+
+-- Qualified staff, retirement-ready to mentor next generation.
+SELECT ut.dept_name, ut.title, COUNT(ut.title) 
+INTO qualified_staff
+FROM (SELECT title, dept_name from unique_titles_department) as ut
+WHERE ut.title IN ('Senior Engineer', 'Senior Staff', 'Technique Leader', 'Manager')
+GROUP BY ut.dept_name, ut.title
+ORDER BY ut.dept_name DESC;
