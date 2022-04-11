@@ -49,4 +49,12 @@ Software:
 ![mentorship_eligibility](Queries/mentorship_eligibility.png)
 
 ## Summary
+### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+- The table retirement titles contains all the information about the employees that are about to retire in the next four years. To get the number of positions that will be open in next four years I ran additional query that breaks down how many staff will retire per department. Since every department will be affected in some way this query gives more precise numbers what each department can expect and how many roles will need to be filled. Most positions that will be affected are engineering roles. 
 
+![roles_to_fill](Queries/roles_to_fill.png)
+
+### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+- To ensure that are enough qualified staff for training at Pewlett-Hackard I ran a query with additional filter that returns only employees on higher positions, assuming that these positions are the ones qualified to mentor. From the table we can see how many qualified employees are in each department to train next generation of employees. 
+
+![qualified_staff](Queries/qualified_staff.png)
